@@ -1,10 +1,10 @@
-import { UserService } from './services/user.service';
+import { VoorstellingService } from './services/voorstelling.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { VoorstellingComponent } from './components/dashboard/voorstelling.component';
 import { HttpModule, Http } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
@@ -22,12 +22,13 @@ import { FilmEditComponent } from './components/films/film-edit/film-edit.compon
 import { BioscoopService } from './services/bioscoop.service';
 import { BioscopenComponent } from './components/halls/bioscoop.component';
 import { BioscoopEditComponent } from './components/halls/bioscoop-edit/bioscoop-edit.component' 
+import { VoorstellingEditComponent} from './components/dashboard/voorstelling-edit/voorstelling-edit.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     DropdownDirective,    
-    DashboardComponent,
+    VoorstellingComponent,
     HeaderComponent,
     FilmsComponent,
     FilmStartComponent,
@@ -36,7 +37,8 @@ import { BioscoopEditComponent } from './components/halls/bioscoop-edit/bioscoop
     FilmDetailComponent,
     FilmEditComponent,
     BioscopenComponent,
-    BioscoopEditComponent
+    BioscoopEditComponent,
+    VoorstellingEditComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +48,7 @@ import { BioscoopEditComponent } from './components/halls/bioscoop-edit/bioscoop
     AppRoutingModule
   ],
   providers: [
-    UserService,
+    VoorstellingService,
     FilmService,
     BioscoopService
   ],

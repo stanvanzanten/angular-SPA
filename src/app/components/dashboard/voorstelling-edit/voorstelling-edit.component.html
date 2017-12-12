@@ -2,7 +2,7 @@
         <div class="col-xs-12">
           <form (ngSubmit)="onSubmit(f)" #f="ngForm">
             <div class="row">
-              <div class="col-sm-5 form-group">
+              <div class="col-sm-3 form-group">
                 <label for="name">Naam</label>
                 <input
                   type="text"
@@ -13,7 +13,7 @@
                   required
                   >
               </div>
-              <div class="col-sm-7 form-group">
+              <div class="col-sm-6 form-group">
                 <label for="discription">Beschrijving</label>
                 <input
                   type="string"
@@ -24,6 +24,17 @@
                   required
                   >
               </div>
+              <div class="col-sm-3 form-group">
+                    <label for="discription">Image URL</label>
+                    <input
+                      type="string"
+                      id="description"
+                      class="form-control"
+                      name="description"
+                      ngModel
+                      required
+                      >
+                  </div>
             </div>
             <div class="row">
               <div class="col-xs-12">

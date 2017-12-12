@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DashboardComponent } from './components/dashboard/dashboard.component'
+import { VoorstellingComponent } from './components/dashboard/voorstelling.component'
 import { FilmsComponent } from './components/films/films.component'
 import { FilmDetailComponent } from './components/films/film-detail/film-detail.component'
 import { FilmStartComponent } from './components/films/film-start/film-start.component'
@@ -16,7 +16,7 @@ const appRoutes: Routes = [
     { path: ':id/edit' , component: FilmEditComponent }
   ] },
   { path: 'bioscopen', component: BioscopenComponent},
-  { path: 'dashboard', component: DashboardComponent}
+  { path: 'voorstellingen', component: VoorstellingComponent}
 ];
 
 @NgModule({

@@ -9,7 +9,10 @@
               *ngFor="let bioscoop of bioscopen; let i = index"
               (click)="onEditItem(i)"
             >
-              {{ bioscoop.name }} ({{ bioscoop.description }})
+            <h4>
+               {{ bioscoop.name }} 
+              </h4>
+               {{ bioscoop.description }}
             </a>
           </ul>
         </div>
