@@ -1,0 +1,17 @@
+<div class="row">
+        <div class="col-xs-10">
+          <app-bioscoop-edit></app-bioscoop-edit>
+          <hr>
+          <ul class="list-group">
+            <a
+              class="list-group-item"
+              style="cursor: pointer"
+              *ngFor="let bioscoop of bioscopen; let i = index"
+              (click)="onEditItem(i)"
+            >
+              {{ bioscoop.name }} ({{ bioscoop.description }})
+            </a>
+          </ul>
+        </div>
+      </div>
+      
