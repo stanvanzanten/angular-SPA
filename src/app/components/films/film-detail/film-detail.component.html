@@ -1,4 +1,4 @@
-<div *ngIf="film" class="row">
+ <div *ngIf="film">
   <div  class="col-xs-12">
     <img
       [src]="film?.imagePath"
@@ -12,7 +12,7 @@
     <h1>{{ film?.name }}</h1>
   </div>
 </div>
-<div class="row">
+<!-- <div class="row"> -->
   <div class="col-xs-12">
     <div
       class="btn-group"
@@ -28,12 +28,12 @@
       </ul>
     </div>
   </div>
-</div>
-<div class="row">
+<!-- </div> -->
+<!-- <div class="row"> -->
   <div class="col-xs-12">
     {{ film?.description }}
   </div>
-</div>
+<!-- </div> -->
 <div *ngIf="!film">
   er zijn geen films
 </div>
